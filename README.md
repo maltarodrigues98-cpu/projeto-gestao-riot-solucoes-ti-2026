@@ -2,11 +2,6 @@
 
 **Projeto acadêmico individual (2026)** • Riot Soluções de TI / cliente fictício Tauste Roupas
 
-## Como abrir
-
-1. Extraia todos os arquivos da pasta.
-2. Abra `index.html` no Chrome, Edge, Firefox ou outro navegador recente. Não é necessário instalar bibliotecas ou configurar um servidor.
-3. Alternativamente, abra o arquivo único `Tauste_Roupas_Prototipo.html` fornecido separadamente.
 
 ## O que funciona
 
