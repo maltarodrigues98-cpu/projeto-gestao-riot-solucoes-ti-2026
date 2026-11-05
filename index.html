@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0e2134" />
+  <meta name="description" content="Protótipo acadêmico de gestão de estoque para Tauste Roupas — Riot Soluções de TI." />
+  <title>Tauste Roupas | Gestão de Estoque</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="seed.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">T</span><span><strong>TAUSTE</strong><small>ROUPAS • ESTOQUE</small></span></div>
+      <div class="nav-label">MENU PRINCIPAL</div>
+      <nav class="side-nav" aria-label="Menu principal">
+        <button data-nav="dashboard" class="nav-item active"><span aria-hidden="true">▦</span> Visão geral</button>
+        <button data-nav="products" class="nav-item"><span aria-hidden="true">▤</span> Produtos</button>
+        <button data-nav="movements" class="nav-item"><span aria-hidden="true">⇄</span> Movimentações</button>
+        <button data-nav="alerts" class="nav-item"><span aria-hidden="true">⚑</span> Alertas <span id="nav-alerts" class="nav-counter">0</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-indicator"></div><div><strong>Riot Soluções de TI</strong><small>Protótipo acadêmico • 2026</small></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="breadcrumb"><span class="dot"></span> Painel de controle <span class="chevron">›</span> <strong id="breadcrumb-page">Visão geral</strong></div>
+        <div class="top-actions"><span class="demo-tag">DADOS SIMULADOS</span><label class="role-label" for="role-select">Perfil de demonstração</label><select id="role-select" aria-label="Perfil de demonstração"><option value="gerente">Gerente</option><option value="funcionario">Funcionário</option></select></div>
+      </header>
+      <main id="content" aria-live="polite"></main>
+      <footer class="footer">Tauste Roupas • Sistema demonstrativo offline • Dados armazenados neste navegador • Sem autenticação real</footer>
+    </div>
+  </div>
+  <dialog id="modal"><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
