@@ -1,58 +1,77 @@
-# Tauste Roupas — protótipo web de gestão de estoque
+# Projeto Tauste Roupas — Gestão de Estoque
 
-**Projeto acadêmico individual (2026)** • Riot Soluções de TI / cliente fictício Tauste Roupas
+**UNINOVE | Ciência da Computação | 2026**
 
+**Desenvolvedora:** Riot Soluções de TI  
+**Cliente:** Tauste Roupas
 
-## O que funciona
+*Projeto acadêmico individual desenvolvido com empresas e dados fictícios.*
 
-- Painel com métricas atualizadas de estoque.
-- Consulta de modelos e das variações de **cor e tamanho**.
-- Cadastro de novos modelos e distribuição automática do estoque inicial entre variações (selecionar perfil **Gerente**).
-- Registro de entradas e saídas de mercadorias **por variação**, com validação contra saldo negativo.
-- Alertas de **estoque baixo** (saldo entre 1 e 10% do inicial da variação) e **esgotado** (saldo 0).
-- Histórico das movimentações feitas durante o uso do protótipo.
-- Exportação do saldo e do histórico em **CSV**.
-- Persistência local no navegador por `localStorage`, quando permitido.
-- Botão **Restaurar cenário** para retornar aos dados do notebook.
+## 1. Apresentação
 
-## Dados de demonstração
+Este projeto apresenta o desenvolvimento de um sistema de controle de estoque para a empresa fictícia Tauste Roupas, com o objetivo de facilitar o gerenciamento de mercadorias.
 
-Dados **fictícios e simulados**, reproduzidos do notebook `Disciplina_2_Analise_de_Dados_Tauste_Roupas_ (2).ipynb`, desenvolvido para o projeto:
+A Riot Soluções de TI é a empresa fictícia responsável pelo desenvolvimento da solução.
 
-- 10 modelos de vestuário, 68 variações de cor/tamanho.
-- 532 peças de estoque **inicial**.
-- 97 peças como **saldo de setembro de 2026**.
-- 26 variações normais, 31 com estoque baixo, 11 esgotadas, seguindo a regra de estoque mínimo do notebook.
-- Os dados de movimentações simuladas de julho a setembro que constam no notebook **não** estão inseridos no histórico do protótipo; o histórico mostra só as operações feitas pelo usuário no navegador.
+O trabalho integra quatro disciplinas do curso de Ciência da Computação da UNINOVE.
 
-## Teste rápido sugerido para o vídeo
+## 2. Objetivo
 
-1. Abra a Visão geral e mostre as métricas.
-2. Vá em Produtos, clique em `Camiseta oversized` e mostre as 8 variações reais do notebook.
-3. Em Alertas, filtre mentalmente o exemplo `Meia de cano alto` (saldo 0 em setembro).
-4. Registre uma **entrada** de 5 unidades em uma variação esgotada e confirme a atualização do painel.
-5. Registre uma **saída**; tente registrar outra maior que o saldo para demonstrar a validação.
-6. Com o perfil Gerente, cadastre um produto novo e mostre suas cores e tamanhos.
-7. Exporte o estoque para CSV e, se quiser repetir os testes, clique em Restaurar cenário.
+Desenvolver um sistema web que facilite o controle de estoque de uma loja de roupas, reduzindo erros no registro de mercadorias e melhorando a organização dos produtos.
 
-## Estrutura
+O sistema permite acompanhar quantidades, tamanhos, cores e movimentações, além de identificar produtos com estoque baixo ou esgotado.
 
-- `index.html`: layout, menus e elementos básicos.
-- `styles.css`: estilo responsivo.
-- `seed.js`: dados **idênticos ao cenário do notebook**, antes de operações na interface.
-- `app.js`: interações, cadastro, movimentações, alertas, histórico e exportações.
+## 3. Disciplinas do projeto
 
-## Limitações importantes
+**Disciplina 1 — Gestão de Projetos**
 
-**Este é um protótipo funcional de interface (front-end), não um sistema comercial pronto.** Não há banco de dados no servidor, login, autenticação, controle real de permissões, trilha de auditoria imutável, API, testes de segurança ou sincronização entre dispositivos. A opção "Perfil de demonstração" apenas simula a visualização do Gerente e do Funcionário; não impede tecnicamente que outra pessoa altere os dados do navegador. Os registros ficam apenas no navegador/dispositivo utilizado e podem ser apagados ao limpar os dados do site.
+Planejamento do desenvolvimento, incluindo TAP, EAP, Backlog, Matriz RACI, cronograma de Gantt, orçamento, comunicação e gestão de riscos.
 
-Para produção, seria necessário implementar back-end, autenticação/autorização no servidor, banco de dados, auditoria, proteção de dados e testes completos de segurança.
+**Disciplina 2 — Análise de Dados**
 
-## Como testar tecnicamente
+Utilização de Python para organizar, tratar e analisar dados de estoque, produzindo indicadores, estatísticas e gráficos.
 
-- No navegador, valide saldos e alertas após entradas e saídas.
-- Confira que uma saída acima do saldo é rejeitada.
-- Confira que o botão Restaurar volta a 97 peças e 68 variações.
-- Acesse o código e analise as regras de estoque mínimo.
+**Disciplina 3 — Segurança da Informação**
 
-Este arquivo e o projeto são adequados como **ponto de partida para a implementação acadêmica**, mas devem ser validados pelo aluno e pelo professor antes de afirmar cumprimento integral dos requisitos.
+Identificação de riscos e elaboração de propostas de segurança, incluindo Matriz GUT, controle de acesso e proteção de dados conforme a LGPD.
+
+**Disciplina 4 — Pesquisa Operacional**
+
+Aplicação de modelos matemáticos em Python para maximizar lucros e minimizar custos de distribuição de mercadorias.
+
+## 4. Funcionalidades do sistema
+
+- Cadastro e consulta de produtos.
+- Organização por categoria, tamanho e cor.
+- Registro de entrada e saída de mercadorias.
+- Atualização das quantidades disponíveis.
+- Alertas de estoque baixo e esgotado.
+- Bloqueio de saídas superiores ao estoque.
+- Histórico de movimentações.
+- Exportação dos dados em CSV.
+
+O protótipo utiliza dados simulados de 10 modelos de roupas, originalmente distribuídos em 68 variações.
+
+## 5. Tecnologias utilizadas
+
+| Tecnologia | Finalidade |
+|---|---|
+| HTML, CSS e JavaScript | Desenvolvimento do sistema web |
+| Python | Análise de dados e otimização |
+| Google Colab | Execução dos códigos |
+| Pandas e Matplotlib | Tratamento de dados e gráficos |
+| PuLP | Resolução dos problemas de otimização |
+| Trello | Organização das atividades |
+| GitHub | Armazenamento e versionamento do projeto |
+
+## 6. Documentação e evidências
+
+O projeto reúne documentos de planejamento, análises desenvolvidas em Python, modelos de otimização e registros dos testes realizados no sistema.
+
+As evidências incluem capturas de tela do Google Colab, do Trello e do protótipo web.
+
+O trabalho será consolidado em um relatório acadêmico com os resultados das quatro disciplinas.
+
+---
+
+**Projeto em Gestão de Sistemas Computacionais — UNINOVE — 2026**
