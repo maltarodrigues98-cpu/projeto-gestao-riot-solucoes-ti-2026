@@ -1,0 +1,11 @@
+﻿Codigo,Produto,Estoque_Inicial,Preco,Entradas_Julho,Saidas_Julho,Saldo_Julho,Entradas_Agosto,Saidas_Agosto,Saldo_Agosto,Entradas_Setembro,Saidas_Setembro,Saldo_Setembro,Estoque_Minimo,Status,Total_Saidas
+PR001,Camiseta oversized,80,89.9,20,35,65,15,40,40,10,43,7,8,Estoque baixo,118
+PR002,Camiseta polo,64,99.9,12,22,54,10,25,39,8,30,17,7,Normal,77
+PR003,Camiseta regata,48,49.9,8,15,41,6,17,30,3,24,9,5,Normal,56
+PR004,Calça jeans,72,159.9,15,27,60,9,30,39,6,34,11,8,Normal,91
+PR005,Calça cargo,56,179.9,12,25,43,7,28,22,8,26,4,6,Estoque baixo,79
+PR006,Calça de moletom,40,129.9,7,10,37,5,16,26,6,15,17,4,Normal,41
+PR007,Calça social,32,199.9,4,7,29,2,9,22,3,14,11,4,Normal,30
+PR008,Meia esportiva,60,24.9,14,24,50,10,26,34,9,30,13,6,Normal,80
+PR009,Meia de cano alto,44,29.9,8,16,36,5,19,22,3,25,0,5,Esgotado,60
+PR010,Meia soquete,36,19.9,6,12,30,6,15,21,4,17,8,4,Normal,44
